@@ -1,0 +1,69 @@
+html, body {
+  height: auto;
+  max-width: 100%;
+  text-align: center;
+  background-color: blanchedalmond;
+  color: darkslategray;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  padding-top: 70px;
+}
+
+button{
+  border-radius: 10px;
+  width: 50px;
+  height: 25px;
+  color: blanchedalmond;
+  background-color: seagreen;
+  outline: 0px;
+}
+
+button:hover{
+  background-color: blanchedalmond;
+  color: seagreen;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width:500px){
+  body{
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    padding-top: 0px;
+  }
+
+  .container{
+    width: 380px;
+    height: auto;
+  }
+  .responsive-iframe{
+    max-width: 380px;
+    height: auto  ;
+  }
+  
+  .col-1 h2{
+    font-size: 18pt;
+  }
+  .col-1 h5{
+    font-size: 10pt;
+  }
+  button{
+    border-radius: 17px;
+    width: 70px;
+    height: 35px;
+    font-size: 14pt;
+    text-align: center;    
+  }
+}
